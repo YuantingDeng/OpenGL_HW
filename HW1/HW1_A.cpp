@@ -14,7 +14,6 @@ int IterNum = 5000, Width=50, Height = 50;
 // Change vertices[1][1] from 50 to 25. 图形上边定点向下移动.
 // Change vertices[2][0] from 50 to 25. 图形右边定点向左移动。
 // Change vertices[2][1] from 0 to 25. 图形右边定点向上移动。
-int fuck = 0;
 
 void myinit()
 {
@@ -50,8 +49,6 @@ void display() // is randomly called
         p[1] = (p[1]+vertices[j][1])/2;
         // display new point
         glVertex3fv(p);
-        fuck++;
-        cout<<fuck<<endl;
     }
     glEnd();
     glFlush();
